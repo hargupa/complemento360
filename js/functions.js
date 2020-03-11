@@ -317,7 +317,7 @@ function saveModify(){
 		localStorage.setItem('ArrayPlayer', dataJson);
 		LoadTable(localStorage.getItem('ArrayPlayer'));	
 		localStorage.idmodify='';
-		alert('Se actualizaron los cambios realizados!');
+		alert('Se actualizaron los cambios!');
 		for (i = 0; i<=3;i++){
 			document.getElementById(ArrayControl[i]).value=''
 		}		
