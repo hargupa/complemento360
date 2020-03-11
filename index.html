@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--js-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/mdb.js"></script>
+	<script src="js/functions.js"></script>
+	<!--css-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/mdb.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body onload="getData();">
+	<div class="container">
+		<!-- Card -->
+		<div class="card">
+
+		  <!-- Card content -->
+		  <div class="card-body">
+
+		  	<div class="row">
+		  		<div class="col-2">
+					<div class="md-form">
+					  <input type="text" id="first_name" class="form-control">
+					  <label for="first_name" id="1">First Name</label>
+					</div>		  			
+		  		</div>
+		  		<div class="col-2">
+					<div class="md-form">
+					  <input type="text" id="last_name" class="form-control">
+					  <label for="last_name" id="2">Last Name</label>
+					</div>			  			
+	  			
+		  		</div>
+		  		<div class="col-2">
+					<div class="md-form">
+					  <input type="text" id="height_inches" class="form-control">
+					  <label for="height_inches" id="3">Height Inches</label>
+					</div>		  			
+		  		</div>
+		  		<div class="col-2">
+					<div class="md-form">
+					  <input type="text" id="height_feet" class="form-control">
+					  <label for="height_feet" id="4">Height_Feet</label>
+					</div>		  			
+		  		</div>
+		  		<div class="col-4">
+					<div class="md-form">
+					  <button type="button" class="btn btn-primary" onclick="Add();">Guardar</button>&nbsp
+					  <button type="button" class="btn btn-primary" onclick="Search();">Buscar</button>
+					  <button type="button" class="btn btn-primary" title="Recargar Pagina" onclick="javascript:location.reload()"><i class="fas fa-sync"></i></button>
+					</div>		  			
+		  		</div>			  				  				  				  				  		
+		  	</div>
+
+		  </div>
+
+		</div>
+		<!-- Card -->
+	</div>
+
+	<div class="container">
+		<div class="table-responsive text-nowrap">
+		        <!--Table-->
+		        <table class="table table-striped">
+
+		          <!--Table head-->
+		          <thead>
+		            <tr>
+		              <th>id</th>
+		              <th>first_name</th>
+		              <th>last_name</th>
+		              <th>height_inches</th>
+		               <th>height_feet</th>
+		              <th></th>
+		            </tr>
+		          </thead>
+		          <!--Table head-->
+
+		          <!--Table body-->
+		          <tbody id="listplayer">
+		          </tbody>
+		          <!--Table body-->
+
+
+		        </table>
+		        <!--Table-->
+		      </div>
+
+		<!--Section: Live preview-->
+	</div>
+	<div class="container">
+		<div id="detailplayer"></div>
+	</div>
+
+</body>
+</html>
